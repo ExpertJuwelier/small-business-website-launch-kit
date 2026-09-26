@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A free, practical website launch checklist and brief builder for small businesses. Plan your pages, check essentials and download your brief.">
+  <meta name="theme-color" content="#142d33">
+  <title>Small Business Website Launch Kit</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"><div class="wrap brand"><span class="mark" aria-hidden="true">✓</span><span>Website Launch Kit</span><a href="#checklist">The checklist</a></div></header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <p class="eyebrow">Free tool for small businesses</p>
+      <h1 id="title">Build a website people can actually use.</h1>
+      <p class="lead">Plan the essentials, check the details and leave with a brief you can hand to a designer or use to build your site yourself.</p>
+      <a class="button" href="#planner">Start your plan <span aria-hidden="true">→</span></a>
+      <p class="privacy">No account. Your answers stay in this browser.</p>
+    </section>
+
+    <div class="layout">
+      <section class="panel" id="planner" aria-labelledby="planner-title">
+        <div class="section-heading"><span class="step">01 / Plan</span><h2 id="planner-title">Your website brief</h2><p>Keep your answers simple. You can refine them later.</p></div>
+        <form id="brief-form">
+          <div class="fields">
+            <label>Business name <input name="business" autocomplete="organization" placeholder="e.g. Karoo Garden Studio" maxlength="120"></label>
+            <label>What do you sell or offer? <textarea name="offer" rows="2" placeholder="Describe your main products or services in one sentence."></textarea></label>
+            <label>Who is the website for? <textarea name="audience" rows="2" placeholder="e.g. Homeowners in Cape Town looking for garden design."></textarea></label>
+            <label>What should visitors do first? <select name="goal"><option value="">Choose a main goal</option><option>Request a quote</option><option>Book a call or appointment</option><option>Buy a product</option><option>Send an enquiry</option><option>Read about the business</option><option value="Other">Something else</option></select></label>
+            <label>Where do you operate? <input name="location" placeholder="e.g. Johannesburg and online" maxlength="150"></label>
+            <label>What makes you credible? <textarea name="proof" rows="2" placeholder="Examples: reviews, qualifications, years in business, real photos."></textarea></label>
+            <label>Which pages do you need? <input name="pages" placeholder="e.g. Home, Services, About, Contact" maxlength="250"></label>
+            <label>How can people contact you? <textarea name="contact" rows="2" placeholder="Email, phone, WhatsApp or booking link."></textarea></label>
+          </div>
+          <div class="actions"><button type="button" class="button" id="download">Download my brief</button><button type="button" class="button secondary" id="copy">Copy brief</button></div>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="panel" id="checklist" aria-labelledby="checklist-title">
+        <div class="section-heading"><span class="step">02 / Check</span><h2 id="checklist-title">Launch checklist</h2><p>Tick what you have checked yourself. Progress saves in this browser.</p></div>
+        <div class="progress-head"><strong id="count">0 of 20 complete</strong><span id="percent">0%</span></div>
+        <div class="progress" role="progressbar" aria-label="Launch checklist progress" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0" id="progress"><span id="fill"></span></div>
+        <div id="items"></div>
+        <button type="button" class="text-button" id="reset">Reset saved answers and checklist</button>
+      </section>
+    </div>
+
+    <section class="next" aria-labelledby="next-title"><div><p class="eyebrow">When you are ready</p><h2 id="next-title">Turn the brief into a website.</h2><p>Use this plan with the platform or professional that suits your business. If you want a starting point, explore The Marketing Specialists' free AI website builder.</p></div><a class="button light" href="https://marketingspecialists.co.za/website-builder/">Explore the builder <span aria-hidden="true">→</span></a></section>
+  </main>
+  <footer class="wrap footer"><span>Free website planning resource.</span><span>Built for useful launches, not perfect paperwork.</span></footer>
+</body>
+</html>
