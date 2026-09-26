@@ -4,7 +4,7 @@ A free website planning tool for small businesses. Fill in a short brief, work t
 
 ## Try it
 
-Open `index.html` in a browser. After publishing with GitHub Pages, add your live link here.
+Open `index.html` in a browser. https://expertjuwelier.github.io/small-business-website-launch-kit/.
 
 ## What it helps with
 
